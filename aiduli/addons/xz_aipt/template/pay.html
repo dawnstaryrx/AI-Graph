@@ -1,0 +1,267 @@
+{template 'common/header'}
+
+<ul class="nav nav-tabs">
+<li><a href="{$user_link}">返回</a></li>
+<li  class="active"><a href="#">用户充值</a></li>
+
+
+</ul>
+
+
+
+	<div class="panel-body" style="margin-top:20px">
+    <div role="form" >
+      <input type="hidden" id="idd"  value="{$_GPC['listid']}">
+
+
+      <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">数量</label>
+        <div class="col-sm-10">
+          <input type="text" id="num" class="form-control" value="{$config_db['num']}">
+        </div>
+      </div>
+	    <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">金额</label>
+        <div class="col-sm-10">
+          <input type="text" id="money" class="form-control" value="{$config_db['money']}">
+        </div>
+      </div>
+
+	    <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">每日限额</label>
+        <div class="col-sm-10">
+          <input type="text" id="pernum" class="form-control" value="{$config_db['pernum']}">
+        </div>
+      </div>
+
+	    <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">有效期</label>
+        <div class="col-sm-10">
+          <input type="text" id="endtime" class="form-control" value="{$config_db['endtime']}">
+		  日期格式 2023-01-01
+        </div>
+      </div>
+
+
+	
+
+	    <div class="form-group" style="display:none">
+        <label for="firstname" class="col-sm-2 control-label">缩略图(250宽度最佳)</label>
+        <div class="col-sm-10">
+            <div class="mui-input-cell"> {php echo tpl_form_field_image('s_pic',$s_pic,'')} </div>
+        </div>
+      </div>
+
+
+	   <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">操作</label>
+        <div class="col-sm-10">
+          <button  class="btn btn-primary"  onClick="add()">提交</button>
+        </div>
+      </div>
+	  </div>
+
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2 class="panel-title">
+			{$username} - 充值记录
+		</h2>
+	</div>
+
+		<!--内容-->
+		<table class="table table-hover">
+	
+	<thead>
+		<tr>
+			<th>编号</th>
+			<th>时间</th>
+			
+            <th>灵感数量</th>
+		    <th>金额</th>
+		
+			
+		</tr>
+	</thead>
+	<tbody>
+		{loop $applist $index $itme}
+		<tr>
+			<td>{$itme['id']}</td>
+			
+			<td>{$itme['ctime']}</td>
+		
+			<td>{$itme['num']}</td>
+	
+		<td>{if $itme['money']==0}客服录入{else}{$itme['money']}{/if}</td>
+<td>
+
+			<button  class="btn btn-primary"  onClick="edit({$itme['id']})">编辑</button>
+			<button  class="btn btn-danger" onClick="del({$itme['id']})" style="display:none">删除</button>
+		
+			</td>
+		</tr>
+		{/loop}
+	</tbody>
+</table>
+	
+	</div>
+</div>
+
+{template 'common/footer'}
+
+<script>
+
+
+
+	function del(idd){
+		
+ if(window.confirm('你确定？')){
+        //继续执行
+    }else{
+		
+return;
+    }
+$.post("{php echo $this->createWebUrl('pay')}", {
+			
+			type:'del',
+			id:idd
+
+		},function (data) {
+			
+				 var obj = JSON.parse(data);
+				 	 if(obj['res']==1){
+alertf('删除成功','提醒',function(){window.location.href="{php echo $this->createWebUrl('pay')}"+'&ptype='+GetQueryString('ptype') })
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+	})
+return;
+
+	}
+
+
+
+	function add(){
+var idd="{$_GPC['id']}"
+$.post("{php echo $this->createWebUrl('pay')}", {
+
+			type:'add',
+			id: $('#idd').val(),
+			userid:idd,
+	    	num: $('#num').val(),
+			money: $('#money').val(),
+			endtime : $('#endtime').val(),
+			pernum: $('#pernum').val()
+
+		},function (data) {
+			
+				 var obj = JSON.parse(data);
+				 	 if(obj['res']==1){
+alertf('操作成功','提醒',function(){window.location.href="{php echo $this->createWebUrl('pay')}"+'&id='+idd })
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				
+
+	})
+return;
+
+	}
+
+	function edit(idd){
+var is="{$_GPC['id']}"
+
+		window.location.href="{php echo $this->createWebUrl('pay')}"+"&type=edit&id="+is+'&listid='+idd
+
+	}
+	
+
+function GetQueryString(name) {
+var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+var r = window.location.search.substr(1).match(reg);
+if (r != null) {
+return unescape(r[2]);
+}
+return null;
+}
+
+function showPopover(target, msg) {
+	
+    target.attr("data-original-title", msg);
+    $('[data-toggle="tooltip"]').tooltip();
+    target.tooltip('show');
+    target.focus();
+
+    //2秒后消失提示框
+    var id = setTimeout(
+        function () {
+            target.attr("data-original-title", "");
+            target.tooltip('hide');
+        }, 2000
+    );
+}
+
+function auto(idd){
+window.location.href="{php echo $this->createWebUrl('auto')}"+"&classid="+idd+"&ptype="+"{php echo $_GPC['ptype']}"
+}
+
+function vip(idd){
+	
+
+	
+	$.post("{php echo $this->createWebUrl('vip')}", {
+
+			classid:idd,
+			vip:$('#vip'+idd).val()
+
+		},function (data) {
+			
+				 var obj = JSON.parse(data);
+				 	 if(obj['res']==1){
+
+ showPopover($("#vip"+idd),"操作成功")
+
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				
+
+	})
+
+}
+
+
+function my(idd,str){
+	
+
+	
+	$.post("{php echo $this->createWebUrl('my')}", {
+
+			classid:idd,
+			my:$('#my'+idd).val()
+
+		},function (data) {
+			
+				 var obj = JSON.parse(data);
+				 	 if(obj['res']==1){
+
+ showPopover($("#my"+idd),"操作成功")
+
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				
+
+	})
+
+}
+
+　$(function(){
+if(!$('#endtime').val()){
+	$('#endtime').val('2999-12-12')
+};
+　　});
+</script>
+
+

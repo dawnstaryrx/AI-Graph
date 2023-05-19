@@ -1,0 +1,280 @@
+{template 'common/header'}
+
+<ul class="nav nav-tabs">
+
+<li class="active"><a href="#">意间接口</a></li>
+
+</ul>
+
+	<div class="panel-body" style="margin-top:20px">
+    <div role="form" >
+      <input type="hidden" id="idd"  value="{$idd}">
+      <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">接口名称</label>
+        <div class="col-sm-10">
+          <input type="text" id="name" class="form-control" value="{$config_db['name']}">
+        </div>
+      </div>
+
+ <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">KEY</label>
+        <div class="col-sm-10">
+          <input type="text" id="key" class="form-control" value="{$config_db['key']}">
+        </div>
+      </div>
+
+
+	   <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">密钥</label>
+        <div class="col-sm-10">
+          <input type="text" id="pw" class="form-control" value="{$config_db['pw']}">
+        </div>
+      </div>
+
+ <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">每日限量</label>
+        <div class="col-sm-10">
+          <input type="text" id="minnum" class="form-control" value="{$config_db['minnum']}">
+        </div>
+      </div>
+
+
+	  <div class="form-group" style="height:30px">
+        <label for="firstname" class="col-sm-2 control-label">总额度</label>
+        <div class="col-sm-10">
+          <input type="text" id="maxnum" class="form-control" value="{$config_db['maxnum']}">
+        </div>
+      </div>
+
+
+
+	  <div class="form-group" style="height:30px;display:none">
+        <label for="firstname" class="col-sm-2 control-label">排序</label>
+        <div class="col-sm-10">
+          <input type="text" id="pos" class="form-control" value="{$config_db['pos']}">
+        </div>
+      </div>
+
+	    <div class="form-group" style="display:none">
+        <label for="firstname" class="col-sm-2 control-label">缩略图(250宽度最佳)</label>
+        <div class="col-sm-10">
+            <div class="mui-input-cell"> {php echo tpl_form_field_image('s_pic',$s_pic,'')} </div>
+        </div>
+      </div>
+
+
+	   <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">操作</label>
+        <div class="col-sm-10">
+          <button  class="btn btn-primary"  onClick="add()">提交</button>
+        </div>
+      </div>
+	  </div>
+
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2 class="panel-title">
+			分类列表
+		</h2>
+	</div>
+
+		<!--内容-->
+		<table class="table table-hover">
+	
+	<thead>
+		<tr>
+			<th>编号</th>
+			<th>名称</th>
+         <th>今日使用/每日</th>
+		 <th>累计使用/总量</th>
+			<th>排序</th>
+			<th>隐藏</th>
+		</tr>
+	</thead>
+	<tbody>
+		{loop $applist $index $itme}
+		<tr>
+			<td>{$itme['id']}</td>
+			<td>{$itme['name']}</td>
+			<td>{$itme['todayuse']}/{$itme['minnum']}</td>
+
+			<td>{$itme['totaluse']}/{$itme['maxnum']}</td>
+			
+			<td>{$itme['pos']}</td>
+	
+			<td>  <select id="my{$itme['id']}" data-toggle="tooltip" data-placement="top"  onchange="my({$itme['id']},'my')">
+  <option value ="0" {if $itme['my']!=1}selected{/if}>启用</option>
+  <option value ="1" {if $itme['my']==1}selected{/if}>关闭</option>
+
+</select></td>
+			<td>
+			<button  class="btn btn-primary"  onClick="edit({$itme['id']})">编辑</button>
+			<button  class="btn btn-danger" onClick="del({$itme['id']})">删除</button>
+		
+			</td>
+		</tr>
+		{/loop}
+	</tbody>
+</table>
+	
+	</div>
+</div>
+
+{template 'common/footer'}
+
+<script>
+	require(['../../../addons/xz_aipt/template/libs/com.js?r={php echo mt_rand(1000,1000000)}'])
+
+function del(idd){
+		
+ if(window.confirm('你确定？')){
+        //继续执行
+    }else{
+		
+return;
+    }
+$.post("{php echo $this->createWebUrl('yijian')}", {
+			
+			type:'del',
+			id:idd
+
+		},function (data) {
+			
+				 var obj = JSON.parse(data);
+				 	 if(obj['res']==1){
+alertf('删除成功','提醒',function(){window.location.href="{php echo $this->createWebUrl('yijian')}"+'&ptype='+GetQueryString('ptype') })
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				
+
+	})
+return;
+
+	}
+
+	function add(){
+
+$.post("{php echo $this->createWebUrl('yijian')}", {
+
+			type:'add',
+			id: $('#idd').val(),
+key: $('#key').val(),
+pw: $('#pw').val(),
+			name: $('#name').val(),
+			minnum: $('#minnum').val(),
+			maxnum: $('#maxnum').val(),
+			pos: $('#pos').val(),
+			pid:GetQueryString('ptype'),
+			 imgpath:$('input[name="s_pic"]').val(),
+			
+
+		},function (data) {
+			
+				 var obj = JSON.parse(data);
+				 	 if(obj['res']==1){
+alertf('操作成功','提醒',function(){window.location.href="{php echo $this->createWebUrl('yijian')}"+'&ptype='+GetQueryString('ptype') })
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				
+
+	})
+return;
+
+	}
+
+	function edit(idd){
+
+		window.location.href="{php echo $this->createWebUrl('yijian')}"+"&type=edit&id="+idd+'&ptype='+GetQueryString('ptype')
+
+	}
+	
+
+function GetQueryString(name) {
+var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+var r = window.location.search.substr(1).match(reg);
+if (r != null) {
+return unescape(r[2]);
+}
+return null;
+}
+
+function showPopover(target, msg) {
+	
+    target.attr("data-original-title", msg);
+    $('[data-toggle="tooltip"]').tooltip();
+    target.tooltip('show');
+    target.focus();
+
+    //2秒后消失提示框
+    var id = setTimeout(
+        function () {
+            target.attr("data-original-title", "");
+            target.tooltip('hide');
+        }, 2000
+    );
+}
+
+
+
+function auto(idd){
+window.location.href="{php echo $this->createWebUrl('auto')}"+"&classid="+idd+"&ptype="+"{php echo $_GPC['ptype']}"
+}
+
+function vip(idd){
+	
+
+	
+	$.post("{php echo $this->createWebUrl('vip')}", {
+
+			classid:idd,
+			vip:$('#vip'+idd).val()
+
+		},function (data) {
+			
+				 var obj = JSON.parse(data);
+				 	 if(obj['res']==1){
+
+ showPopover($("#vip"+idd),"操作成功")
+
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				
+
+	})
+
+}
+
+
+function my(idd,str){
+	
+
+	
+	$.post("{php echo $this->createWebUrl('myyijian')}", {
+
+			classid:idd,
+			my:$('#my'+idd).val()
+
+		},function (data) {
+			
+				 var obj = JSON.parse(data);
+				 	 if(obj['res']==1){
+
+ showPopover($("#my"+idd),"操作成功")
+
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				
+
+	})
+
+
+}
+</script>
+
+

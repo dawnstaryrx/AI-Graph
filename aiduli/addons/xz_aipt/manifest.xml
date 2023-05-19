@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.w7.cc" versionCode="">
+	
+	<application setting='false'>
+		<name><![CDATA[AI变现全家桶]]></name>
+
+		<identifie><![CDATA[xz_aipt]]></identifie>
+
+		<version><![CDATA[1.0.0]]></version>
+
+		<ability><![CDATA[AI变现全家桶]]></ability>
+
+		<description><![CDATA[AI变现全家桶]]></description>
+
+		<author><![CDATA[QQK05dzZDkNW]]></author>
+
+		<url><![CDATA[]]></url>
+
+	</application>
+
+	
+	<platform>
+		<rule embed="false" />
+
+		<card embed="false" />
+
+	<supports>
+
+			<item type="branch" />
+			<item type="wxapp" />
+	</supports>
+
+	</platform>
+
+	
+	<bindings>
+
+		<menu>
+
+			<entry title="配置中心" do="config" state="config" direct="" displayorder="0" multilevel="false" parent="" />
+
+
+<entry title="充值管理" do="pro" state="pro" direct="" displayorder="0" multilevel="false" parent="" />
+
+<entry title="分类管理" do="class" state="class" direct="" displayorder="0" multilevel="false" parent="" />
+<entry title="AI图片" do="aiimg" state="aiimg" direct="" displayorder="0" multilevel="false" parent="" />
+
+<entry title="意间接口" do="yijian" state="yijian" direct="" displayorder="0" multilevel="false" parent="" />
+<entry title="火山接口" do="huoshan" state="huoshan" direct="" displayorder="0" multilevel="false" parent="" />
+<entry title="百度接口" do="baidu" state="baidu" direct="" displayorder="0" multilevel="false" parent="" />
+<entry title="视频换脸" do="videolist" state="videolist" direct="" displayorder="0" multilevel="false" parent="" />
+<entry title="图片换脸" do="imglist" state="imglist" direct="" displayorder="0" multilevel="false" parent="" />
+
+<entry title="轮播管理" do="swiper" state="swiper" direct="" displayorder="0" multilevel="false" parent="" />
+<entry title="导航管理" do="tab" state="tab" direct="" displayorder="0" multilevel="false" parent="" />
+
+<entry title="用户管理" do="user" state="user" direct="" displayorder="0" multilevel="false" parent="" />
+
+		</menu>
+
+	</bindings>
+
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

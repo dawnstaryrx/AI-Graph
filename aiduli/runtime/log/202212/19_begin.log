@@ -1,0 +1,859 @@
+---------------------------------------------------------------
+[ 2022-12-19T23:26:10+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/huoshan',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:26:14+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '20',
+  'host' => 'db.xiaohuss.com',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'del',
+  'list' => '785|',
+  'module' => 'xz_aipt',
+  'do' => 'setapi',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:26:57+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/huoshan',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:27:03+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '20',
+  'host' => 'db.xiaohuss.com',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'del',
+  'list' => '785|',
+  'module' => 'xz_aipt',
+  'do' => 'setapi',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:29:27+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '20',
+  'host' => 'db.xiaohuss.com',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'del',
+  'list' => '785|',
+  'module' => 'xz_aipt',
+  'do' => 'setapi',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:29:29+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:37:34+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '74',
+  'host' => 'db.xiaohuss.com',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'del',
+  'list' => '784|783|782|781|780|779|778|777|776|775|',
+  'module' => 'xz_aipt',
+  'do' => 'setapi',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:37:36+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:37:47+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '44',
+  'host' => 'db.xiaohuss.com',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'del',
+  'list' => '774|773|772|771|770|',
+  'module' => 'xz_aipt',
+  'do' => 'setapi',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:37:49+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:38:10+08:00 ] 180.149.125.159 GET 110.40.180.178/
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'host' => '110.40.180.178',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:47:22+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'config',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:47:29+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config&type=creatdb
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '0',
+  'host' => 'db.xiaohuss.com',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'creatdb',
+  'module' => 'xz_aipt',
+  'do' => 'config',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:47:31+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'config',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:47:36+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/huoshan
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'huoshan',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:47:37+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/baidu
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/huoshan',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'baidu',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:47:39+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/baidu',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'config',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:47:40+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'config',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:48:18+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:51:11+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:52:58+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '21',
+  'host' => 'db.xiaohuss.com',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'del',
+  'list' => '1040|',
+  'module' => 'xz_aipt',
+  'do' => 'setapi',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:53:52+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:54:06+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '21',
+  'host' => 'db.xiaohuss.com',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'del',
+  'list' => '1040|',
+  'module' => 'xz_aipt',
+  'do' => 'setapi',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:55:54+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://db.xiaohuss.com',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'content-length' => '21',
+  'host' => 'db.xiaohuss.com',
+)
+[ begin ] [ PARAM ] array (
+  'type' => 'del',
+  'list' => '1040|',
+  'module' => 'xz_aipt',
+  'do' => 'setapi',
+)
+---------------------------------------------------------------
+[ 2022-12-19T23:55:56+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ begin ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'store',
+    1 => 'addons',
+    2 => 'run',
+  ),
+)
+[ begin ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=74i9m10mb5bb637dar88ri4qnu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+  'cache-control' => 'max-age=0',
+  'host' => 'db.xiaohuss.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ begin ] [ PARAM ] array (
+  'module' => 'xz_aipt',
+  'do' => 'aiimg',
+)

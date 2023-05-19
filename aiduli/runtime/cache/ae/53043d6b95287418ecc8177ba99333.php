@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:1:{s:7:"storage";a:5:{s:3:"key";s:7:"storage";s:8:"describe";s:12:"上传设置";s:6:"values";a:2:{s:7:"default";s:5:"qiniu";s:6:"engine";a:3:{s:5:"qiniu";a:4:{s:6:"bucket";s:10:"msm-815716";s:10:"access_key";s:40:"lsVpDPYhsPF7GO_U3oOudLhmu0WAbeuT-xoH9bjU";s:10:"secret_key";s:40:"_nXik9L7ncp382VhNQi_mYdCQwxZ1yN6TU71sN-9";s:6:"domain";s:27:"https://sb.youxiangkeji.top";}s:6:"aliyun";a:4:{s:6:"bucket";s:0:"";s:13:"access_key_id";s:0:"";s:17:"access_key_secret";s:0:"";s:6:"domain";s:7:"http://";}s:6:"qcloud";a:5:{s:6:"bucket";s:10:"loveme-125";s:6:"region";s:10:"ap-beijing";s:9:"secret_id";s:30:"AKIDqffdYP7oR1lnlfaSCuznaKA0qd";s:10:"secret_key";s:27:"44DUmiffi4QMKk9VyQxTxSBtYAj";s:6:"domain";s:18:"https://cdn.xiaohu";}}}s:8:"wxapp_id";i:10004;s:11:"update_time";s:19:"2022-12-19 22:29:16";}}

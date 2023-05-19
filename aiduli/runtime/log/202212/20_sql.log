@@ -1,0 +1,117 @@
+---------------------------------------------------------------
+[ 2022-12-20T00:51:45+08:00 ] 167.94.138.46 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2022-12-20T01:55:46+08:00 ] 106.55.206.104 GET db.xiaohuss.com/index.php?s=/store/passport/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_store_user` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_store_user` WHERE  `is_delete` = 0  AND `store_user_id` = 0 LIMIT 1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2022-12-20T02:43:41+08:00 ] 159.75.163.228 GET db.xiaohuss.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000224s ]
+---------------------------------------------------------------
+[ 2022-12-20T04:26:24+08:00 ] 106.55.206.98 GET db.xiaohuss.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000227s ]
+---------------------------------------------------------------
+[ 2022-12-20T05:36:15+08:00 ] 167.94.138.118 GET 110.40.180.178:443/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000392s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000217s ]
+---------------------------------------------------------------
+[ 2022-12-20T05:36:16+08:00 ] 167.94.138.118 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000427s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000225s ]
+---------------------------------------------------------------
+[ 2022-12-20T05:59:47+08:00 ] 71.6.232.22 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.002468s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000269s ]
+---------------------------------------------------------------
+[ 2022-12-20T06:30:30+08:00 ] 103.203.59.1 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000349s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000257s ]
+---------------------------------------------------------------
+[ 2022-12-20T08:30:24+08:00 ] 103.20.61.17 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[ 2022-12-20T09:27:38+08:00 ] 183.136.225.32 GET 110.40.180.178:443/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000420s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000224s ]
+---------------------------------------------------------------
+[ 2022-12-20T09:27:38+08:00 ] 183.136.225.32 GET 110.40.180.178:443/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2022-12-20T11:00:32+08:00 ] 161.35.84.133 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000435s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2022-12-20T12:16:30+08:00 ] 85.209.135.214 POST 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000394s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2022-12-20T12:53:07+08:00 ] 162.142.125.7 GET 110.40.180.178:443/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2022-12-20T12:53:08+08:00 ] 162.142.125.7 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000217s ]
+---------------------------------------------------------------
+[ 2022-12-20T13:03:10+08:00 ] 192.241.203.31 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2022-12-20T13:33:40+08:00 ] 159.203.3.214 GET 110.40.180.178/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;port=3306;dbname=db_xiaohuss_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_setting` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_setting` WHERE  `key` = 'store' LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpwe_modules` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `tpwe_modules` WHERE  `identifie` IS NULL LIMIT 1 [ RunTime:0.000217s ]

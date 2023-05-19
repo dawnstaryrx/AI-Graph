@@ -1,0 +1,686 @@
+---------------------------------------------------------------
+[ 2022-12-19T23:26:10+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+---------------------------------------------------------------
+[ 2022-12-19T23:26:14+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [0]致命错误: Call to a member function message() on array
+[ error ] Fatal error: Call to a member function message() on array
+[ error ] #0 /www/wwwroot/db.xiaohuss.com/application/common/library/storage/Driver.php(66): app\common\library\storage\engine\Qiniu->delete('202212151559231...')
+#1 /www/wwwroot/db.xiaohuss.com/application/store/model/UploadFile.php(1): app\common\library\storage\Driver->delete('202212151559231...')
+#2 /www/wwwroot/db.xiaohuss.com/extend/we/framework/function/api_attachurl.php(1): app\store\model\UploadFile->setDeletepath('202212151559231...')
+#3 /www/wwwroot/db.xiaohuss.com/addons/xz_aipt/site.php(900): del_remote_imgpath('202212151559231...')
+#4 /www/wwwroot/db.xiaohuss.com/application/store/controller/Addons.php(1): Xz_aiptModuleSite->doAppSetapi()
+#5 [internal function]: app\store\controller\Addons->run()
+#6 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(343): ReflectionMethod->invokeArgs(Object(app\store\controller\Addons), Array)
+#7 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(611): think\App::invokeMethod(Array, Array)
+#8 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#9 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#10 /www/wwwroot/db.xiaohuss.com/thinkphp/start.php(19): think\App::run()
+#11 /www/wwwroot/db.xiaohuss.com/index.php(24): require('/www/wwwroot/db...')
+#12 {main}
+---------------------------------------------------------------
+[ 2022-12-19T23:26:57+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_remote
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_remote
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+---------------------------------------------------------------
+[ 2022-12-19T23:27:03+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [0]致命错误: Call to a member function message() on array
+[ error ] Fatal error: Call to a member function message() on array
+[ error ] #0 /www/wwwroot/db.xiaohuss.com/application/common/library/storage/Driver.php(66): app\common\library\storage\engine\Qiniu->delete('202212151559231...')
+#1 /www/wwwroot/db.xiaohuss.com/application/store/model/UploadFile.php(1): app\common\library\storage\Driver->delete('202212151559231...')
+#2 /www/wwwroot/db.xiaohuss.com/extend/we/framework/function/api_attachurl.php(1): app\store\model\UploadFile->setDeletepath('202212151559231...')
+#3 /www/wwwroot/db.xiaohuss.com/addons/xz_aipt/site.php(900): del_remote_imgpath('202212151559231...')
+#4 /www/wwwroot/db.xiaohuss.com/application/store/controller/Addons.php(1): Xz_aiptModuleSite->doAppSetapi()
+#5 [internal function]: app\store\controller\Addons->run()
+#6 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(343): ReflectionMethod->invokeArgs(Object(app\store\controller\Addons), Array)
+#7 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(611): think\App::invokeMethod(Array, Array)
+#8 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#9 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#10 /www/wwwroot/db.xiaohuss.com/thinkphp/start.php(19): think\App::run()
+#11 /www/wwwroot/db.xiaohuss.com/index.php(24): require('/www/wwwroot/db...')
+#12 {main}
+---------------------------------------------------------------
+[ 2022-12-19T23:29:27+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: Xend_Key
+---------------------------------------------------------------
+[ 2022-12-19T23:29:29+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+---------------------------------------------------------------
+[ 2022-12-19T23:37:34+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: Xend_Key
+---------------------------------------------------------------
+[ 2022-12-19T23:37:36+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+---------------------------------------------------------------
+[ 2022-12-19T23:37:47+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: Xend_Key
+---------------------------------------------------------------
+[ 2022-12-19T23:37:49+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+---------------------------------------------------------------
+[ 2022-12-19T23:38:10+08:00 ] 180.149.125.159 GET 110.40.180.178/
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: module
+[ error ] [8]未定义数组索引: Xend_Key
+---------------------------------------------------------------
+[ 2022-12-19T23:47:22+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_remote
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_remote
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义数组索引: sharemode
+[ error ] [8]未定义数组索引: sharemode
+[ error ] [8]未定义数组索引: fad
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: woa_name
+[ error ] [8]未定义数组索引: dy_id
+[ error ] [8]未定义数组索引: dy_pw
+---------------------------------------------------------------
+[ 2022-12-19T23:47:29+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config&type=creatdb
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+---------------------------------------------------------------
+[ 2022-12-19T23:47:31+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义数组索引: sharemode
+[ error ] [8]未定义数组索引: sharemode
+[ error ] [8]未定义数组索引: fad
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: woa_name
+[ error ] [8]未定义数组索引: dy_id
+[ error ] [8]未定义数组索引: dy_pw
+---------------------------------------------------------------
+[ 2022-12-19T23:47:36+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/huoshan
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: ptype
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_remote
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_remote
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+[ error ] [8]未定义变量: idd
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: ptype
+---------------------------------------------------------------
+[ 2022-12-19T23:47:37+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/baidu
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: ptype
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_remote
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_local
+[ error ] [8]未定义数组索引: attachurl_remote
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+[ error ] [8]未定义变量: idd
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义变量: config_db
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: ptype
+---------------------------------------------------------------
+[ 2022-12-19T23:47:39+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义数组索引: sharemode
+[ error ] [8]未定义数组索引: sharemode
+[ error ] [8]未定义数组索引: fad
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: woa_name
+[ error ] [8]未定义数组索引: dy_id
+[ error ] [8]未定义数组索引: dy_pw
+---------------------------------------------------------------
+[ 2022-12-19T23:47:40+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/config
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义数组索引: type
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义数组索引: sharemode
+[ error ] [8]未定义数组索引: sharemode
+[ error ] [8]未定义数组索引: fad
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: upload
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: extras
+[ error ] [8]未定义数组索引: woa_name
+[ error ] [8]未定义数组索引: dy_id
+[ error ] [8]未定义数组索引: dy_pw
+---------------------------------------------------------------
+[ 2022-12-19T23:48:18+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+---------------------------------------------------------------
+[ 2022-12-19T23:51:11+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+---------------------------------------------------------------
+[ 2022-12-19T23:52:58+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [0]致命错误: Call to a member function message() on array
+[ error ] Fatal error: Call to a member function message() on array
+[ error ] #0 /www/wwwroot/db.xiaohuss.com/application/common/library/storage/Driver.php(66): app\common\library\storage\engine\Qiniu->delete('202212151559231...')
+#1 /www/wwwroot/db.xiaohuss.com/application/store/model/UploadFile.php(1): app\common\library\storage\Driver->delete('202212151559231...')
+#2 /www/wwwroot/db.xiaohuss.com/extend/we/framework/function/api_attachurl.php(1): app\store\model\UploadFile->setDeletepath('202212151559231...')
+#3 /www/wwwroot/db.xiaohuss.com/addons/xz_aipt/site.php(900): del_remote_imgpath('202212151559231...')
+#4 /www/wwwroot/db.xiaohuss.com/application/store/controller/Addons.php(1): Xz_aiptModuleSite->doAppSetapi()
+#5 [internal function]: app\store\controller\Addons->run()
+#6 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(343): ReflectionMethod->invokeArgs(Object(app\store\controller\Addons), Array)
+#7 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(611): think\App::invokeMethod(Array, Array)
+#8 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#9 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#10 /www/wwwroot/db.xiaohuss.com/thinkphp/start.php(19): think\App::run()
+#11 /www/wwwroot/db.xiaohuss.com/index.php(24): require('/www/wwwroot/db...')
+#12 {main}
+---------------------------------------------------------------
+[ 2022-12-19T23:53:52+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link
+---------------------------------------------------------------
+[ 2022-12-19T23:54:06+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [0]致命错误: Call to a member function message() on array
+[ error ] Fatal error: Call to a member function message() on array
+[ error ] #0 /www/wwwroot/db.xiaohuss.com/application/common/library/storage/Driver.php(66): app\common\library\storage\engine\Qiniu->delete('202212151559231...')
+#1 /www/wwwroot/db.xiaohuss.com/application/store/model/UploadFile.php(1): app\common\library\storage\Driver->delete('202212151559231...')
+#2 /www/wwwroot/db.xiaohuss.com/extend/we/framework/function/api_attachurl.php(1): app\store\model\UploadFile->setDeletepath('202212151559231...')
+#3 /www/wwwroot/db.xiaohuss.com/addons/xz_aipt/site.php(900): del_remote_imgpath('202212151559231...')
+#4 /www/wwwroot/db.xiaohuss.com/application/store/controller/Addons.php(1): Xz_aiptModuleSite->doAppSetapi()
+#5 [internal function]: app\store\controller\Addons->run()
+#6 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(343): ReflectionMethod->invokeArgs(Object(app\store\controller\Addons), Array)
+#7 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(611): think\App::invokeMethod(Array, Array)
+#8 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(456): think\App::module(Array, Array, true)
+#9 /www/wwwroot/db.xiaohuss.com/thinkphp/library/think/App.php(139): think\App::exec(Array, Array)
+#10 /www/wwwroot/db.xiaohuss.com/thinkphp/start.php(19): think\App::run()
+#11 /www/wwwroot/db.xiaohuss.com/index.php(24): require('/www/wwwroot/db...')
+#12 {main}
+---------------------------------------------------------------
+[ 2022-12-19T23:55:54+08:00 ] 124.135.24.71 POST db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/setapi
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义数组索引: Xend_Key
+---------------------------------------------------------------
+[ 2022-12-19T23:55:56+08:00 ] 124.135.24.71 GET db.xiaohuss.com/index.php?s=/store/addons/run/module/xz_aipt/do/aiimg
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义数组索引: Xend_Key
+[ error ] [8]未定义变量: url
+[ error ] [8]未定义变量: ptype
+[ error ] [8]未定义数组索引: page
+[ error ] [8]未定义数组索引: classname
+[ error ] [8]未定义数组索引: pagenum
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: script_name
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义数组索引: isajax
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: setting
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: version
+[ error ] [8]未定义变量: base_url
+[ error ] [8]未定义变量: store_url
+[ error ] [8]未定义变量: swiper_link

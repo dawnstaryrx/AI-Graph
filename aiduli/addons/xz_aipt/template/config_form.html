@@ -1,0 +1,687 @@
+ {template 'common/header'} 
+
+
+<ul class="nav nav-tabs">
+
+<li class="active" ><a href="{$config_link}"   >配置中心</a></li>
+<li ><a href="{$class_link}">分类管理</a></li>
+<li ><a href="{$aiimg_link}">AI图片</a></li>
+<li ><a href="{$baidu_link}">百度接口</a></li>
+<li ><a href="{$huoshan_link}">火山接口</a></li>
+<li ><a href="{$swiper_link}">轮播管理</a></li>
+<li ><a href="{$tab_link}">导航管理</a></li>
+<li ><a href="{$user_link}">用户管理</a></li>
+
+</ul>
+
+<div class="panel panel-default" style="border-top:none" >
+  
+<div class="panel-body"> 
+    <!--内容-->
+<form role="form" >
+
+<input type="hidden" id="idd"  value="{$idd}">
+
+<br>
+
+<div style="width:100%;text-align:center;font-weight: bold;background-color:#f9f9f9;border-radius:10px;height:40px;line-height:40px;">////--基础信息设置--////</div>
+<br>
+
+  <div class="form-group">
+
+<label for="firstname" class="col-sm-2 control-label">绘画接口类型</label>
+
+<div class="col-sm-10">
+
+<select id="btnname">
+	<option value ="12" {if $config_db['btnname']==2}selected{/if}>意间绘画 </option>
+ <option value ="1" {if $config_db['btnname']==1}selected{/if}>百度文心 </option>
+  <option value ="0" {if $config_db['btnname']==0}selected{/if}>已作废 </option>
+</select>
+ 建议使用意间，0.05元成本。百度是应对恶意投诉时候切换即可。
+        </div>
+      </div>
+<div class="form-group" >
+        <label for="firstname" class="col-sm-2 control-label">IOS是否支付</label>
+        <div class="col-sm-10">
+            <select id="paymode">
+  <option value ="0" {if $config_db['paymode']==0}selected{/if}>开启 </option>
+  <option value ="1" {if $config_db['paymode']==1}selected{/if}>关闭 </option>
+
+</select>
+ 这里开启。并且配置了支付参数将开启支付
+		</div>
+      </div>
+
+
+<div class="form-group" >
+        <label for="firstname" class="col-sm-2 control-label">是否开启裂变</label>
+        <div class="col-sm-10">
+            <select id="tt_id">
+  <option value ="0" {if $config_db['tt_id']==0}selected{/if}>开启 </option>
+  <option value ="1" {if $config_db['tt_id']==1}selected{/if}>关闭 </option>
+
+</select>
+ 开启后，支付页面会增加邀请人进入的人头奖励
+		</div>
+      </div>
+
+  <div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">邀请奖励灵感数</label>
+        <div class="col-sm-10">
+          <input type="text" id="tt_pw" class="form-control" value="{$config_db['tt_pw']}">
+        </div>
+      </div>
+
+  <div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">小程序标题</label>
+        <div class="col-sm-10">
+          <input type="text" id="title" class="form-control" value="{$config_db['title']}">
+        </div>
+      </div>
+
+
+
+ <div class="form-group"  style="display:none"   >
+        <label for="firstname" class="col-sm-2 control-label">观看视频次数</label>
+        <div class="col-sm-10">
+          <input type="text" id="token" class="form-control" value="{$config_db['token']}">
+		  观看多少次视频，就不再显示激励视频（防止用户刷激励视频）
+        </div>
+      </div>
+
+	  <div class="form-group"  style="display:none">
+        <label for="firstname" class="col-sm-2 control-label">最大下载次数</label>
+      <div class="col-sm-10">
+          <input type="text" id="wtimes" class="form-control" value="{$config_db['wtimes']}">
+         一段时间内（关闭小程序30分钟左右重置），下载图片最大次数，不要写0，不限制可以写9999。
+		</div>
+      </div>
+
+	  <div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">客服账号</label>
+        <div class="col-sm-10">
+          <input type="text" id="btnurl" class="form-control" value="{$config_db['btnurl']}">如果添加的是推文，将跳转到推文链接。
+        </div>
+      </div>
+
+	<div class="form-group"   >
+        <label for="firstname" class="col-sm-2 control-label">客服详情页</label>
+        <div class="col-sm-10">
+          <input type="text" id="imgurl" class="form-control" value="{$config_db['imgurl']}">
+		  可以调用推文链接或webview域名链接
+        </div>
+      </div>
+
+<div class="form-group"    style="display:none">
+        <label for="firstname" class="col-sm-2 control-label">结算比例</label>
+        <div class="col-sm-10">
+          <input type="text" id="pay" class="form-control" value="{$config_db['pay']}">
+          收益的百分之多少，分配给会员。填写0-100。（100为全部给会员，80是80%金额分配给入驻博主）<font style="color:#ec0000">注意：配置中心分佣参数更改后会改变历史数据，如需修改分成——会员资料设置扣量不会影响历史数据。</font>
+		</div>
+      </div>
+<div class="form-group"  style="display:none"  >
+        <label for="firstname" class="col-sm-2 control-label">下载量比例</label>
+        <div class="col-sm-10">
+          <input type="text" id="show" class="form-control" value="{$config_db['show']}">
+          会员下载量与真实下载量比例。如果填写50，即显示下载量的50%，下载量显示越低，下载单价越高。（用户都喜欢单价高）
+		</div>
+      </div>
+
+<div class="form-group"  style="display:none" >
+        <label for="firstname" class="col-sm-2 control-label">团队返佣</label>
+        <div class="col-sm-10">
+          <input type="text" id="teampay" class="form-control" value="{$config_db['teampay']}">
+       介绍人抽取下线创作者的百分比。
+		
+		</div>
+      </div>
+	  <br>
+
+ <div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">自定义违禁词</label>
+        <div class="col-sm-10">
+          <input type="text" id="topimg" class="form-control" value="{$config_db['topimg']}">
+		  违禁词用|分割，例如：性感|sexy|大波妹 
+        </div>
+      </div>
+
+<div style="width:100%;text-align:center;display:none" >○○-------------------------------评测参数设置-------------------------------○○</div>
+
+
+
+ <div class="form-group"  style="display:none" >
+        <label for="firstname" class="col-sm-2 control-label">海报显示头像</label>
+        <div class="col-sm-10">
+<select id="sharemode" >
+  <option value ="0" {if $config_db['sharemode']!=1}selected{/if}>关闭 </option>
+  <option value ="1" {if $config_db['sharemode']==1}selected{/if}>开启 </option>
+</select>
+        </div>
+      </div>
+
+		  <div class="form-group"  style="display:none">
+          <label for="firstname" class="col-sm-2 control-label">客服二维码</label>
+          <div class="col-sm-10">
+           
+			   <div class="mui-input-cell"> {php echo tpl_form_field_image('qcode',$qcode,$qcode_view)} </div>
+			   
+          </div>
+        </div>
+
+  <div class="form-group"   >
+        <label for="firstname" class="col-sm-2 control-label">分享标题</label>
+        <div class="col-sm-10">
+          <input type="text" id="s_title" class="form-control" value="{$config_db['s_title']}">
+        </div>
+      </div>
+
+	  <div class="form-group"   >
+        <label for="firstname" class="col-sm-2 control-label">分享图片</label>
+        <div class="col-sm-10">
+            <div class="mui-input-cell"> {php echo tpl_form_field_image('s_pic',$s_pic,$s_pic_view)} </div>
+        </div>
+      </div>
+ <div class="form-group"  style="display:none" >
+        <label for="firstname" class="col-sm-2 control-label">对话名称</label>
+        <div class="col-sm-10">
+          <input type="text" id="woa_name" class="form-control" value="{$config_db['woa_name']}">
+       
+		</div>
+      </div>
+
+
+<div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">首页数据显示规则</label>
+        <div class="col-sm-10">
+         <select id="targetid">
+  <option value ="0" {if $config_db['targetid']==0}selected{/if}>随机 </option>
+  <option value ="1" {if $config_db['targetid']==1}selected{/if}>推荐 </option>
+
+</select>
+        </div>
+      </div>
+<br>
+<div style="width:100%;text-align:center;font-weight: bold;background-color:#f9f9f9;border-radius:10px;height:40px;line-height:40px">////--微信支付设置--////</div>
+<br>
+
+
+<div class="form-group" >
+        <label for="firstname" class="col-sm-2 control-label">商户ID</label>
+        <div class="col-sm-10">
+          <input type="text" id="appid" class="form-control" value="{$config_db['appid']}">
+
+		</div>
+      </div>
+<div class="form-group" >
+        <label for="firstname" class="col-sm-2 control-label">支付V2密钥</label>
+        <div class="col-sm-10">
+          <input type="text" id="secret" class="form-control" value="{$config_db['secret']}">
+不配置支付参数，自动运行个人模式。
+		</div>
+      </div>
+
+
+<br>
+<div style="width:100%;text-align:center;font-weight: bold;background-color:#f9f9f9;border-radius:10px;height:40px;line-height:40px">////--灵感消耗设置--////</div>
+<br>
+<div class="form-group" >
+        <label for="firstname" class="col-sm-2 control-label">新用户灵感</label>
+        <div class="col-sm-10">
+          <input type="text" id="limit" class="form-control" value="{$config_db['limit']}">
+新注册用户，拥有多少灵感
+		</div>
+      </div>
+
+
+
+
+    
+     <div class="form-group"   style="">
+        <label for="firstname" class="col-sm-2 control-label">文生图灵感</label>
+        <div class="col-sm-10">
+                 <input type="text" id="money" class="form-control" value="{$config_db['money']}">
+        随便画画/专业定制模块一次消耗多少灵感（意间接口消耗灵感数，成本0.02）
+        </div>
+      </div>
+
+
+
+     <div class="form-group"   style="display:none">
+        <label for="firstname" class="col-sm-2 control-label">是否充值</label>
+        <div class="col-sm-10">
+              
+ <select id="wenxin">
+  <option value ="1" {if $config_db['wenxin']==0}selected{/if}>未充值 </option>
+  <option value ="1" {if $config_db['wenxin']==1}selected{/if}>已充值 </option>
+</select>
+
+未充值，画一次消耗4张（注意调整价格）。充值后一次性画1张。（文心平台限制）
+
+        </div>
+      </div>
+
+	  <div class="form-group"   style="">
+        <label for="firstname" class="col-sm-2 control-label">图转卡通消耗</label>
+        <div class="col-sm-10">
+                 <input type="text" id="money_a" class="form-control" value="{$config_db['money_a']}">
+        图转卡通一次消耗多少灵感，写0调用流量主。
+        </div>
+      </div>
+
+	  <div class="form-group"   style="">
+        <label for="firstname" class="col-sm-2 control-label">欧系卡通消耗</label>
+        <div class="col-sm-10">
+                 <input type="text" id="money_b" class="form-control" value="{$config_db['money_b']}">
+        欧系卡通一次消耗多少灵感，写0调用流量主。
+        </div>
+      </div>
+
+	  <div class="form-group"   style="">
+        <label for="firstname" class="col-sm-2 control-label">图生动态消耗</label>
+        <div class="col-sm-10">
+                 <input type="text" id="money_c" class="form-control" value="{$config_db['money_c']}">
+        图生动态效果一次消耗多少灵感，写0调用流量主。
+        </div>
+      </div>
+
+
+	  <div class="form-group"   >
+        <label for="firstname" class="col-sm-2 control-label">人像变换</label>
+        <div class="col-sm-10">
+                 <input type="text" id="money_d" class="form-control" value="{$config_db['money_d']}">
+        图换表情/年龄变化消耗多少灵感，写0调用流量主。
+        </div>
+      </div>
+
+	  <div class="form-group" >
+        <label for="firstname" class="col-sm-2 control-label">人脸融合</label>
+        <div class="col-sm-10">
+                 <input type="text" id="money_e" class="form-control" value="{$config_db['money_e']}">
+       图片/视频换脸消耗多少灵感，写0调用流量主。
+        </div>
+      </div>
+
+	  <div class="form-group" >
+        <label for="firstname" class="col-sm-2 control-label">3D游戏脸消耗</label>
+        <div class="col-sm-10">
+                 <input type="text" id="money_f" class="form-control" value="{$config_db['money_f']}">
+      3D游戏脸消耗多少灵感，写0调用流量主。
+        </div>
+      </div>
+
+	
+
+ <div class="form-group"  style="display:none" >
+	////////////////////////////////////////////////////////////////////////////////////
+
+ </div>
+<br>
+<div style="width:100%;text-align:center;font-weight: bold;background-color:#f9f9f9;border-radius:10px;height:40px;line-height:40px">////--流量主设置(非必填)--////</div>
+<br>
+
+<div class="form-group"  style="display:none" >
+        <label for="firstname" class="col-sm-2 control-label">抖音appid</label>
+        <div class="col-sm-10">
+          <input type="text" id="dy_id" class="form-control" value="{$config_db['dy_id']}">
+        </div>
+      </div>
+<div class="form-group"   style="display:none">
+        <label for="firstname" class="col-sm-2 control-label">抖音密钥</label>
+        <div class="col-sm-10">
+          <input type="text" id="dy_pw" class="form-control" value="{$config_db['dy_pw']}">
+        </div>
+      </div>
+<div class="form-group"  style="display:none">
+        <label for="firstname" class="col-sm-2 control-label">快手appid</label>
+        <div class="col-sm-10">
+          <input type="text" id="ks_id" class="form-control" value="{$config_db['ks_id']}">
+        </div>
+      </div>
+<div class="form-group"  style="display:none" >
+        <label for="firstname" class="col-sm-2 control-label">快手密钥</label>
+        <div class="col-sm-10">
+          <input type="text" id="ks_pw" class="form-control" value="{$config_db['ks_pw']}">
+        </div>
+      </div>
+
+<div class="form-group"  style="display:none" >
+        <label for="firstname" class="col-sm-2 control-label">抖音激励</label>
+        <div class="col-sm-10">
+          <input type="text" id="comead" class="form-control" value="{$config_db['comead']}">
+        </div>
+      </div>
+
+	  	<div class="form-group"  style="display:none" >
+        <label for="firstname" class="col-sm-2 control-label">抖音插屏</label>
+        <div class="col-sm-10">
+          <input type="text" id="addad" class="form-control" value="{$config_db['addad']}">
+        </div>
+      </div>
+
+<div class="form-group"   style="display:none">
+        <label for="firstname" class="col-sm-2 control-label">快手激励</label>
+        <div class="col-sm-10">
+          <input type="text" id="ks_comead" class="form-control" value="{$config_db['ks_comead']}">
+        </div>
+      </div>
+
+	  	<div class="form-group"  style="display:none" >
+        <label for="firstname" class="col-sm-2 control-label">快手插屏</label>
+        <div class="col-sm-10">
+          <input type="text" id="ks_addad" class="form-control" value="{$config_db['ks_addad']}">
+        </div>
+      </div>
+	  <div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">微信激励</label>
+        <div class="col-sm-10">
+          <input type="text" id="wx_comead" class="form-control" value="{$config_db['wx_comead']}">
+        </div>
+      </div>
+
+	  	<div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">微信插屏</label>
+        <div class="col-sm-10">
+          <input type="text" id="wx_addad" class="form-control" value="{$config_db['wx_addad']}">
+        </div>
+      </div>
+
+	  	<div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">微信视频</label>
+        <div class="col-sm-10">
+          <input type="text" id="wx_videoad" class="form-control" value="{$config_db['wx_videoad']}">
+        </div>
+      </div>
+
+	    	<div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">微信banner</label>
+        <div class="col-sm-10">
+          <input type="text" id="wx_banner" class="form-control" value="{$config_db['wx_banner']}">
+        </div>
+      </div>
+<br>
+<div style="width:100%;text-align:center;font-weight: bold;background-color:#f9f9f9;border-radius:10px;height:40px;line-height:40px">////--小程序发布设置--////</div>
+<br>
+<div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">微信appid</label>
+        <div class="col-sm-10">
+          <input type="text" id="wx_id" class="form-control" value="{$config_db['wx_id']}">
+        </div>
+      </div>
+<div class="form-group"   >
+        <label for="firstname" class="col-sm-2 control-label">微信密钥</label>
+        <div class="col-sm-10">
+          <input type="text" id="wx_pw" class="form-control" value="{$config_db['wx_pw']}">
+        </div>
+      </div>
+<div class="form-group"    >
+        <label for="firstname" class="col-sm-2 control-label">验证域名</label>
+        <div class="col-sm-10">
+          <input type="text" id="apipath" class="form-control" style="float:left;width:400px"  value="{$config_db['apipath']}" ><button type="button" class="btn btn-primary " style="margin:0 auto;float:left;" onClick="getcode()">获取</button>
+		  <br><br>填写微信appid并保存后再获取。
+<view style="display:none">	{$config_db['wx_id']}|{$_W['siteroot']}|{$_W['uniacid']}|{$_W['attachurl']}</view>
+        </div>
+      </div> 
+
+
+<div class="form-group"  >
+        <label for="firstname" class="col-sm-2 control-label">webview设置</label>
+        <div class="col-sm-10">
+          <input type="text" id="webview" class="form-control" value="" style="width:300px;float:left"> <button type="button" class="btn btn-primary " style="margin:0 auto;float:left;" onClick="setwebview()">设置</button> <button type="button" class="btn btn-primary " style="margin:0 auto;float:left;" onClick="getwebviewfile()">获取验证文件</button> 
+       <br><br>
+	   注意，域名包含https://且不带/，多个域名需要|分割。如提示权限不足，请先点击扫码授权，授权成功后返回操作即可。
+		</div>
+    </div>
+
+  <div class="form-group" >
+        <label for="firstname" class="col-sm-2 control-label">授权二维码</label>
+        <div class="col-sm-10">
+<div id="qrcode"></div>
+        </div>
+      </div>
+
+	  <div class="form-group" style="text-align: center;margin-top:50px">
+
+        <button type="button" class="btn btn-primary btn-lg" style="margin:0 auto;float:left" onClick="submitform()">保存</button> 
+	<button type="button" class="btn btn-primary btn-lg" style="margin:0 auto;float:right;margin-right:5px" onClick="submitformB()" >初始化基础数据</button> 
+	  <button type="button" class="btn btn-primary btn-lg" style="margin:0 auto;float:right;margin-right:5px" onClick="checkupdata()">系统更新</button> 
+ <button type="button" class="btn btn-primary btn-lg" style="margin:0 auto;float:right;margin-right:5px" onClick="checkapp()">发布小程序</button> 
+ <button type="button" class="btn btn-primary btn-lg" style="margin:0 auto;float:right;margin-right:5px" onClick="installapp()">扫码授权-提交前端</button> 
+
+      </div>
+    </form>
+   
+  </div> 
+</div>
+{template 'common/footer'} 
+
+<script src='../../../addons/xz_aipt/template/libs/qrcode.min.js'></script>
+
+
+<script>
+
+
+
+
+
+
+var cput=true;
+var templist=[];
+var temppath='';
+	//require(['../../../addons/xz_aipt/template/libs/com.js?r={php echo mt_rand(1000,1000000)}'])
+	
+	function submitform(){
+
+	//alert($('input[name="wxpic"]').val())
+//判断字段填写
+		            
+         var form_arr=[]
+		 
+		 var emptyvalue=false;
+         for(var x in form_arr){
+		    if(!form_arr[x].val()){
+				emptyvalue=true;
+			}
+		 }
+
+		if(emptyvalue){
+			window.alertf('必填字段不能为空。');
+			return;	
+		}
+
+var db_var=["woa_name","paymode","appid","secret"  ,"sharemode","fad","wx_id","wx_pw","ks_id","ks_pw","tt_id","tt_pw","ks_comead","ks_addad","wx_comead","wx_addad","wx_banner","wx_videoad","btnname","limit","targetid","money","money_a","money_b","money_c","money_d","money_e","money_f","apipath","title","token","wenxin","wtimes","btnurl","imgurl","comead","addad","s_title","pay","show","teampay","idd","topimg"]
+var db_img=["s_pic","qcode"]
+
+var db_obj={}
+for(var i=0;i<db_var.length;i++){	
+db_obj[db_var[i]]=$("#"+db_var[i]).val()
+}
+for(var i=0;i<db_img.length;i++){	
+db_obj[db_img[i]]=$('input[name="'+db_img[i]+'"]').val()
+}
+
+		$.post("{php echo $this->createWebUrl('config')}&type=save", db_obj,
+				function (data) {
+			
+				 obj = JSON.parse(data);
+				
+				 if(obj['res']==1){
+alertf('操作成功','提醒',function(){window.location.href="{php echo $this->createWebUrl('config')}" })
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				});
+
+	}
+
+function submitformB(){
+		 if(cput){
+
+				cput=false
+
+			}else{
+						
+			alert('请不要重复点击，如果长时间没响应。请刷新页面，再次点击。如果出现重复数据，点击清除基础数据，再次写入。')
+            return;
+
+					 }
+					
+if(window.confirm('确认写入基础数据吗？请等待写入成功提示框。多次写入不会出现重复数据。')){
+	                 //alert("确定");
+					
+				$.post("{php echo $this->createWebUrl('config')}&type=creatdb", {
+	
+		},function (data) {
+			
+				 obj = JSON.parse(data);
+				
+				 if(obj['res']==1){
+alertf('操作成功。','提醒',function(){ location.reload()})//
+				 }else{
+				   window.alertf(obj['res'])
+				 }
+				})	 
+ 
+	                 return true;
+	              }else{
+	                 //alert("取消");
+	                 return false;
+	             }
+
+	}
+
+var i=0;
+
+window.onload = function () {
+
+}
+
+function getcode(){
+	
+var db_obj={};
+
+$.post("{php echo $this->createWebUrl('getcode')}", db_obj,function (data) {
+	alertf('获取成功后请点击 [保存]')		
+$('#apipath').val(data)
+
+		})
+
+}
+
+function installapp(){
+
+
+       //   
+$.post("{php echo $this->createWebUrl('loadqcode')}", {
+
+},function (data) {
+			
+var obj = JSON.parse(data);
+
+alertf('扫码授权后可提交前端')
+
+document.getElementById("qrcode").innerHTML='';
+new QRCode(document.getElementById("qrcode"), obj['path']); 
+
+		})
+
+	}
+
+function checkapp(){
+
+$.post("{php echo $this->createWebUrl('checkapp')}", {
+
+		},function (data) {
+			
+	 var obj = JSON.parse(data);
+
+alertf(obj['msg'])
+
+		})
+
+}
+
+function checkupdata(){
+
+if(prompt('请输入更新口令')!='9527'){
+	alertf('权限不足')
+
+}else{
+	
+var con;
+         con=confirm("确定要更新系统文件吗?"); 
+         //在页面上弹出对话框
+         if (con==true){
+			
+         var db_obj={};
+
+$.post("{php echo $this->createWebUrl('checkupdatas')}", db_obj,function (data) {
+alertf('更新完成');
+
+		})
+
+         }
+	
+
+}
+
+}
+
+window.onload = function(){
+
+var pathstr=window.location.toString();
+var url_path_arr=pathstr.split('/')
+
+if(url_path_arr[url_path_arr.length-1]!='1'){
+
+	location.reload();
+	window.location.replace(window.location+'/reload/1');
+
+}
+
+}
+
+
+function getwebviewfile(){
+
+var db_obj={};
+
+$.post("{php echo $this->createWebUrl('getwebviewfile')}", db_obj,function (data) {
+			
+	 var obj = JSON.parse(data);
+
+alertf(obj.res)
+
+		})
+
+}
+	function setwebview(){
+
+var db_obj={};
+
+db_obj['urlpath']=$('#webview').val()
+
+$.post("{php echo $this->createWebUrl('setwebview')}", db_obj,function (data) {
+			
+	 var obj = JSON.parse(data);
+
+alertf(obj.res)
+
+		})
+
+}
+
+setTimeout(function(){
+var db_obj={}
+	$.post("{php echo $this->createWebUrl('checkwebview')}", db_obj,
+	function (data) {
+			
+	obj = JSON.parse(data);
+				
+	$('#webview').val(obj.res);
+//obj['res']
+
+	});
+
+},100)
+</script> 
